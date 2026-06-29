@@ -1,0 +1,25 @@
+# ---- OS junk ----
+.DS_Store
+Thumbs.db
+
+# ---- IDEs ----
+.idea/
+.vscode/
+
+# ---- Dependencies ----
+/vendor/
+composer.lock
+
+# ---- Env / secrets ----
+.env
+.env.*
+!.env.example
+
+# ---- Logs & cache ----
+*.log
+/cache/
+/tmp/
+
+# ---- PHPUnit ----
+.phpunit.result.cache
+coverage/

@@ -1,0 +1,99 @@
+/* ===========================
+   Ticket Scanner pagina styles
+   =========================== */
+
+.scan-form {
+    max-width: 480px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #2b2b36;
+    border: 1px solid #3d3d4a;
+    border-radius: 12px;
+    padding: 32px 36px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.scan-form label {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.85rem;
+    color: #a0a0a0;
+    font-weight: 500;
+}
+
+.scan-form input[type="text"] {
+    padding: 0.65rem 0.9rem;
+    border: 1px solid #3d3d4a;
+    border-radius: 8px;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.95rem;
+    color: #f0f0f0;
+    background: #1e1e24;
+    transition: border-color 0.2s;
+}
+
+.scan-form input[type="text"]:focus {
+    outline: none;
+    border-color: #d4af37;
+}
+
+.scan-form button {
+    padding: 0.6rem 1.2rem;
+    background: #d4af37;
+    color: #111;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.scan-form button:hover {
+    background: #e5c455;
+}
+
+.error-box {
+    max-width: 480px;
+    margin: 1rem auto;
+    padding: 14px 18px;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    color: #b91c1c;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem;
+}
+
+.ticket-detail {
+    max-width: 480px;
+    margin: 2rem auto;
+    background: #2b2b36;
+    border: 1px solid #3d3d4a;
+    border-radius: 12px;
+    padding: 28px 32px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-family: 'Jost', sans-serif;
+}
+
+.ticket-detail h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #f0f0f0;
+    margin: 0 0 18px;
+}
+
+.ticket-detail p {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.ticket-detail strong {
+    color: #f0f0f0;
+    font-weight: 500;
+}

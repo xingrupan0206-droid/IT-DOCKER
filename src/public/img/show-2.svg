@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-label="Voorstelling 2">
+  <defs>
+    <linearGradient id="bg2" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0d2435"/>
+      <stop offset="100%" stop-color="#090b11"/>
+    </linearGradient>
+    <radialGradient id="glow2" cx="50%" cy="26%" r="60%">
+      <stop offset="0%" stop-color="#89c7ff" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#89c7ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg2)"/>
+  <rect width="900" height="600" fill="url(#glow2)"/>
+  <rect x="110" y="100" width="680" height="400" rx="28" fill="#10141f" opacity="0.72"/>
+  <path d="M160 470 C260 430, 360 410, 450 420 C560 434, 650 470, 740 520" stroke="#9ad7ff" stroke-width="10" fill="none" opacity="0.8"/>
+  <circle cx="330" cy="250" r="52" fill="#f3d9bf"/>
+  <circle cx="570" cy="220" r="72" fill="#f3d9bf"/>
+  <path d="M285 250 h90 v100 c0 18-90 18-90 0z" fill="#7b4b91"/>
+  <path d="M520 220 h100 v132 c0 22-100 22-100 0z" fill="#4f6ca0"/>
+  <text x="80" y="540" font-family="Arial, sans-serif" font-size="40" fill="#f4f1ea">De Blauwe Foyer</text>
+</svg>

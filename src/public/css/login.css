@@ -1,0 +1,137 @@
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 48px auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.login-container h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+    margin: 0 0 8px;
+}
+
+.login-subtitle {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 0 32px;
+}
+
+.login-box {
+    background: #0a0a0a;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.login-box label {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 0.8rem 0;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0;
+    margin-bottom: 24px;
+    font-size: 1rem;
+    background: transparent;
+    color: #ffffff;
+    box-sizing: border-box;
+    transition: border-color 0.4s;
+    font-family: inherit;
+    outline: none;
+}
+
+.login-box input:focus {
+    border-bottom-color: #cfa862;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 14px;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #cfa862;
+    background: transparent;
+    border: 1px solid #cfa862;
+    border-radius: 0;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: all 0.4s;
+}
+
+.login-box button:hover {
+    background: #cfa862;
+    color: #050505;
+}
+
+.login-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 24px 0;
+}
+
+.register-link {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    display: block;
+}
+
+.register-link a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 2px;
+    transition: border-color 0.4s;
+}
+
+.register-link a:hover {
+    border-color: #ffffff;
+}
+
+.error {
+    font-size: 0.85rem;
+    color: #a32d2d;
+    background: #fcebeb;
+    border: 0.5px solid #f09595;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 18px;
+}
+
+@media (max-width: 600px) {
+    .login-container { margin: 32px auto; }
+    .login-box { padding: 20px; }
+}
+/* Toevoegen aan je bestaande login.css */
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+}
+
+.verplicht {
+    color: #c0392b;
+}

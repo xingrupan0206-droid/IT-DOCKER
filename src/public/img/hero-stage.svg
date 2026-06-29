@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Theater stage">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0e1020"/>
+      <stop offset="55%" stop-color="#1a1631"/>
+      <stop offset="100%" stop-color="#08090f"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="50%" cy="34%" r="45%">
+      <stop offset="0%" stop-color="#ffe9a8" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#ffc75f" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#ffc75f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="curtain" x1="0" x2="1">
+      <stop offset="0%" stop-color="#4a0f2a"/>
+      <stop offset="50%" stop-color="#791748"/>
+      <stop offset="100%" stop-color="#4a0f2a"/>
+    </linearGradient>
+    <linearGradient id="stage" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#2a223d"/>
+      <stop offset="100%" stop-color="#120f1e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#spot)"/>
+  <path d="M0 80 C180 110, 350 110, 520 80 S860 30, 1040 80 S1420 130, 1600 80 V0 H0 Z" fill="url(#curtain)" opacity="0.95"/>
+  <path d="M0 800 C200 760, 380 770, 560 800 S920 860, 1100 800 S1400 735, 1600 795 V900 H0 Z" fill="url(#stage)"/>
+  <rect x="160" y="300" width="1280" height="380" rx="28" fill="#0c0d15" opacity="0.72"/>
+  <rect x="220" y="340" width="1160" height="6" rx="3" fill="#f2c96d" opacity="0.8"/>
+  <rect x="200" y="720" width="1200" height="16" rx="8" fill="#2b2230"/>
+  <g fill="#f4ead0" opacity="0.95">
+    <ellipse cx="470" cy="510" rx="70" ry="150" fill="#241f33"/>
+    <ellipse cx="800" cy="450" rx="110" ry="210" fill="#1d182b"/>
+    <ellipse cx="1125" cy="510" rx="75" ry="150" fill="#241f33"/>
+  </g>
+  <rect x="720" y="410" width="160" height="230" rx="18" fill="#050608"/>
+  <rect x="742" y="438" width="116" height="50" rx="10" fill="#f2c96d" opacity="0.12"/>
+  <rect x="742" y="510" width="116" height="98" rx="14" fill="#151722"/>
+  <circle cx="800" cy="390" r="42" fill="#f2d5b2"/>
+  <path d="M780 390 h40 v24 c0 24-40 24-40 0z" fill="#d28f6b"/>
+</svg>

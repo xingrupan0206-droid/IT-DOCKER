@@ -1,0 +1,462 @@
+/* Homepage */
+:root {
+    --page-bg: #050505;
+    --ink: #ffffff;
+    --ink-soft: #a0a0a0;
+    --panel: #0a0a0a;
+    --panel-border: rgba(255, 255, 255, 0.1);
+    --gold: #cfa862;
+    --gold-soft: rgba(207, 168, 98, 0.1);
+    --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--page-bg);
+    color: var(--ink);
+    font-family: 'Jost', sans-serif;
+}
+
+main#home {
+    overflow: hidden;
+}
+
+.container {
+    width: min(1300px, 92vw);
+    margin: 0 auto;
+}
+
+.section {
+    padding: 3.6rem 0;
+}
+
+.section-tight {
+    padding-top: 3rem;
+}
+
+.section-muted {
+    background: transparent;
+}
+
+.section-footer-spacer {
+    padding-bottom: 1.2rem;
+}
+
+.section-heading,
+.section-heading-centered {
+    max-width: 58rem;
+    margin: 0 auto 1.6rem;
+    text-align: center;
+}
+
+.section-label,
+.hero-kicker {
+    margin-bottom: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #9f7d2e;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.73rem;
+    font-weight: 600;
+}
+
+.section-label::before,
+.section-label::after,
+.hero-kicker::before,
+.hero-kicker::after {
+    content: "";
+    width: 2.1rem;
+    height: 1px;
+    background: rgba(159, 125, 46, 0.6);
+}
+
+.section h2,
+.hero h1,
+.show-content h3,
+.benefit-card h3,
+.review-card strong,
+.newsletter-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.section h2 {
+    margin: 0 0 0.55rem;
+    font-size: clamp(1.75rem, 3.6vw, 2.6rem);
+    line-height: 1.05;
+}
+
+.section-heading p {
+    margin: 0;
+    color: var(--ink-soft);
+    line-height: 1.65;
+}
+
+.hero {
+    position: relative;
+    min-height: min(74vh, 640px);
+    display: flex;
+    align-items: center;
+    padding: 5rem 0 2.6rem;
+}
+
+.hero-background,
+.newsletter-background {
+    position: absolute;
+    inset: 0;
+}
+
+.hero-background-image,
+.newsletter-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(5, 5, 5, 0.2) 0%, #050505 100%);
+}
+
+.hero-content-wrap,
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content-centered {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 53rem;
+}
+
+.hero h1 {
+    margin: 0 0 1rem;
+    font-size: clamp(2.5rem, 6vw, 4.8rem);
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.hero h1 span {
+    color: var(--gold);
+    font-style: italic;
+    opacity: 1;
+}
+
+.hero-text {
+    margin: 0 auto;
+    max-width: 34rem;
+    color: rgba(247, 241, 233, 0.9);
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.hero-actions-centered {
+    justify-content: center;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 0.64rem 1.08rem;
+    font-size: 0.74rem;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: transparent;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    box-shadow: none;
+}
+
+.btn-primary:hover {
+    background: var(--gold);
+    color: #050505;
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.08);
+    color: #f7f2e9;
+    border: 1px solid rgba(247, 242, 233, 0.4);
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.scroll-pulse {
+    position: absolute;
+    left: 50%;
+    bottom: 0.8rem;
+    transform: translateX(-50%);
+    opacity: 0.45;
+    z-index: 2;
+}
+
+.scroll-line {
+    width: 1px;
+    height: 2.2rem;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), transparent);
+}
+
+.show-grid,
+.benefit-grid,
+.review-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.show-card,
+.benefit-card,
+.review-card {
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 0;
+    box-shadow: var(--shadow-soft);
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.show-card:hover {
+    border-color: rgba(207, 168, 98, 0.4);
+    box-shadow: 0 10px 40px rgba(207, 168, 98, 0.05);
+}
+
+.show-card {
+    overflow: hidden;
+}
+
+.show-image-wrap {
+    overflow: hidden;
+}
+
+.show-image {
+    width: 100%;
+    height: 178px;
+    object-fit: cover;
+    display: block;
+    transform: scale(1);
+    transition: transform 0.45s ease;
+}
+
+.show-card:hover .show-image {
+    transform: scale(1.04);
+}
+
+.show-content {
+    padding: 1rem;
+}
+
+.show-content h3 {
+    margin: 0 0 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    line-height: 1.1;
+}
+
+.show-meta-row {
+    margin-bottom: 0.7rem;
+    display: flex;
+    gap: 0.55rem;
+    flex-wrap: wrap;
+}
+
+.show-meta-row span {
+    display: inline-flex;
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    background: transparent;
+    border: 1px solid rgba(207, 168, 98, 0.3);
+    padding: 0.28rem 0.6rem;
+}
+
+.show-content p,
+.benefit-card p,
+.review-card p {
+    margin: 0;
+    color: #5f5a53;
+    line-height: 1.65;
+}
+
+.show-content p {
+    margin-bottom: 0.75rem;
+}
+
+.benefit-card {
+    padding: 1rem;
+}
+
+.benefit-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 0.55rem;
+    border: 1px solid var(--panel-border);
+    background: var(--gold-soft);
+    color: #5c4613;
+}
+
+.benefit-icon svg {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.benefit-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.35rem;
+}
+
+.review-card {
+    padding: 1rem;
+}
+
+.review-stars {
+    margin-bottom: 0.6rem;
+    letter-spacing: 0.08em;
+    color: #b69135;
+}
+
+.review-card strong {
+    margin-top: 0.55rem;
+    display: block;
+    font-size: 1.2rem;
+}
+
+.review-card span {
+    color: #756f66;
+    font-size: 0.92rem;
+}
+
+.newsletter-banner {
+    position: relative;
+    overflow: hidden;
+    padding: 3.3rem 0;
+    color: #f8f2e7;
+}
+
+.newsletter-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, #050505 0%, rgba(5, 5, 5, 0.5) 20%, rgba(5, 5, 5, 0.5) 80%, #050505 100%);
+}
+
+.newsletter-content {
+    position: relative;
+    z-index: 1;
+    max-width: 46rem;
+    text-align: center;
+}
+
+.newsletter-content h2 {
+    margin: 0 0 0.7rem;
+    font-size: clamp(1.75rem, 4.2vw, 2.65rem);
+}
+
+.newsletter-content p {
+    margin: 0;
+    color: rgba(248, 242, 231, 0.88);
+}
+
+.newsletter-form {
+    margin: 1rem auto 0;
+    width: min(100%, 34rem);
+    display: flex;
+    gap: 0.45rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    min-height: 2.8rem;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    background: transparent;
+    padding: 0 0.5rem;
+    font-family: 'Jost', sans-serif;
+    color: #ffffff;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    border-bottom-color: var(--gold);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+@media (max-width: 1024px) {
+    .show-grid,
+    .benefit-grid,
+    .review-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 760px) {
+    .section {
+        padding: 3rem 0;
+    }
+
+    .hero {
+        min-height: 68vh;
+        padding: 4.2rem 0 2.6rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .show-grid,
+    .benefit-grid,
+    .review-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form .btn {
+        width: 100%;
+    }
+}
